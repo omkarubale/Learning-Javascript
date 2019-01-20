@@ -1,8 +1,8 @@
-function countOccurences(array, searchElement) {
-    return array.reduce((count, currentValue) => {
-        if(currentValue === searchElement){ count += 1;}
-        return count;
-    })
-}
+const courses = [
+    { id : 1, name : 'ECE'},
+    { id : 2, name : 'EEE'},
+]
 
-console.log(countOccurences([2,3,4,5],3))
+console.log(courses.find(function(course) {
+    return course.name == 'ECE';
+}))
